@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff8800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background-color: #ff8800;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1><center>Survey Form</center></h1>
+        <form action="#" method="post">
+            <p>User stories survey form</p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter E-Mail" required>
+
+            <label for="work-experience">Work Experience:</label>
+            <input type="number" id="work-experience" name="work-experience" placeholder="Enter Number" required>
+
+            <label for="comfortable">Are you comfortable investing in real estate on platform without first investigating properly?</label>
+            <select id="comfortable" name="comfortable" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="suggestions">Suggestions to build a trusted platform:</label>
+            <input type="text" id="suggestions" name="suggestions" placeholder="">
+
+            <label>You're ready to invest in:</label><br>
+            <input type="checkbox" id="real-estate" name="invest[]" value="Real Estate">
+            <label for="real-estate">Real Estate</label><br>
+
+            <input type="checkbox" id="mutual-funds" name="invest[]" value="Mutual Funds">
+            <label for="mutual-funds">Mutual Funds</label><br>
+
+            <input type="checkbox" id="crypto" name="invest[]" value="Crypto Currency">
+            <label for="crypto">Crypto Currency</label><br>
+
+            <input type="checkbox" id="stocks" name="invest[]" value="Stocks & Bonds">
+            <label for="stocks">Stocks & Bonds</label><br>
+
+            <label>Are you ready for further contact?</label><br>
+            <input type="radio" id="yes" name="contact" value="Yes" required>
+            <label for="yes">Yes</label><br>
+
+            <input type="radio" id="no" name="contact" value="No" required>
+            <label for="no">No</label><br><br>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

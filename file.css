@@ -1,0 +1,31 @@
+.heading{ color: blue;}
+.def{
+    color: darkgreen;
+}
+.container{
+    border:1px dotted olive ;
+    text-align: center;
+    background-image: url("https://img.freepik.com/premium-photo/beautiful-sunrise-lake-with-flowers-mountains-background_1023064-70679.jpg?semt=ais_hybrid");
+    background-repeat: no-repeat;
+}
+.child1
+{
+    border: 51px solid blue;
+    height: 51px;
+    width: 51PX;
+    padding:100px ;
+    
+}
+.child2
+{
+    border: 31px solid black;
+    height: 31px;
+    width: 101PX;
+
+}
+.child3
+{
+    border: 21px solid olive;
+    height: 21px;
+    width: 101PX;
+}
